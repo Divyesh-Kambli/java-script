@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+<p id="demo"></p>
+
+<script>
+class account
+{
+  constructor(n,b)
+  {
+    this.name=n;
+    this.balance=b;
+  }
+  deposit(amt)
+{
+  this.balance=this.balance+amt;
+}
+}
+class account1 extends account{
+  constructor(n,b)
+  {
+  super(n,b);
+  }
+  withdraw(amt1)
+{
+ this.balance=this.balance-amt1;
+}
+show()
+{
+  var a=this.name+this.balance;
+  document.write(a);
+}
+
+}
+
+
+
+user1=new account1("divyesh",10000);
+user1.deposit(1000);
+user1.withdraw(500);
+user1.show();
+
+
+
+
+
+</script>
+
+</body>
+</html>
