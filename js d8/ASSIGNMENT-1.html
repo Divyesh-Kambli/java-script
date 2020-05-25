@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<p id="demo"></p>
+<p id="demo1"></p>
+
+<script>
+class Employee
+{
+  constructor(i,n,s)
+  {
+    this.cid=i
+    this.cname=n
+    this.sal=s
+    
+  }
+get id()
+  {
+    return this.cid
+  }
+  set id(x)
+  {
+    this.cid=x
+  }
+  get name()
+  {
+    return this.cname
+  }
+  set name(x)
+  {
+    this.cname=x
+  }
+  get salary()
+  {
+    return this.sal
+  }
+  set salary(x)
+  {
+    this.sal=x
+  }
+netsal(x)
+{
+  return x-10*x/100;
+}
+}
+var a=new Employee("1","divyesh",100000)
+var b=new Employee("2","amit",20000)
+document.getElementById("demo").innerHTML="id "+a.cid+" "+"Name "+a.cname+" "+"Salary "+a.sal+" "+"Net "+a.netsal(100000)
+document.getElementById("demo1").innerHTML="id "+b.cid+" "+"Name "+b.cname+" "+"Salary "+b.sal+" "+"Net "+b.netsal(20000)
+
+</script>
+
+</body>
+</html>
